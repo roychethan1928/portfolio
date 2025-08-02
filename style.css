@@ -9,7 +9,7 @@ body {
 .header {
   background: linear-gradient(135deg, #3b82f6, #1e40af);
   color: white;
-  padding: 0.5rem 1rem; /* Reduced height */
+  padding: 0.5rem 1rem;
   text-align: center;
 }
 
@@ -19,23 +19,28 @@ body {
 }
 
 .profile-pic {
-  width: 80px;           /* Smaller profile image */
+  width: 80px;
   height: 80px;
   border-radius: 50%;
   border: 3px solid white;
-  margin-bottom: 0.5rem; /* Less spacing below image */
+  margin-bottom: 0.5rem;
 }
 
 .btn {
   display: inline-block;
-  margin: 0.5rem 0;       /* Reduced vertical margin */
-  padding: 0.4rem 0.8rem; /* Smaller padding */
+  margin: 0.5rem 0;
+  padding: 0.4rem 0.8rem;
   background: white;
   color: #1e40af;
   text-decoration: none;
   border-radius: 20px;
   font-weight: bold;
-  font-size: 0.9rem;      /* Slightly smaller text */
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #dbeafe;
 }
 
 .btn.clicked {
@@ -44,10 +49,28 @@ body {
   color: white;
 }
 
+/* Updated .links section */
+.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 .links a {
-  margin: 0 1rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  background-color: #1e40af;
   color: white;
-  text-decoration: underline;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+  background-color: #3b82f6;
 }
 
 .about, .skills, .achievements, .projects {
@@ -72,4 +95,25 @@ footer {
   padding: 1rem;
   background: #cbd5e1;
   color: #1e293b;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links a {
+    width: 80%;
+    text-align: center;
+  }
+
+  .btn {
+    width: auto;
+  }
+
+  ul {
+    padding-left: 1rem;
+  }
 }
