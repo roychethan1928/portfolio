@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #eef3f9;
+  color: #2d2d2d;
+  transition: all 0.3s ease-in-out;
+}
+
+.header {
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  color: white;
+  padding: 0.5rem 1rem; /* Reduced height */
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.profile-pic {
+  width: 80px;           /* Smaller profile image */
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 0.5rem; /* Less spacing below image */
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.5rem 0;       /* Reduced vertical margin */
+  padding: 0.4rem 0.8rem; /* Smaller padding */
+  background: white;
+  color: #1e40af;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;      /* Slightly smaller text */
+}
+
+.btn.clicked {
+  transform: scale(0.95);
+  background: #2563eb;
+  color: white;
+}
+
+.links a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: underline;
+}
+
+.about, .skills, .achievements, .projects {
+  padding: 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: #1e3a8a;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.2rem;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #cbd5e1;
+  color: #1e293b;
+}
